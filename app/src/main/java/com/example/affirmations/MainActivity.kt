@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         val myDataset = DataSource().loadAffirmations()
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-        recyclerView.layoutManager = GridLayoutManager(this, 2)
+
+//        recyclerView.layoutManager = GridLayoutManager(this, 2)
         recyclerView.adapter = ItemAdapter(this, myDataset)
 
         // This setting is only needed to improve performance if you know that changes
